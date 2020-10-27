@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Hóspedes</title>
+    <link rel="stylesheet" href="página-hospedes.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="página-login.html">Login</a>
+        <a href="página-cadastro.html">Cadastrar</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <div class="container-hospedes">
+        <h1>Só precisamos de mais alguns dados para efetuar sua reserva:</h1>
+            <form>
+                <label for= "check_in"><p>Check In:</p></label> 
+                <input type="date" id="DataEntrada" name="checkIn" class="conferir">
+                <label for= "check_out"><p>Check Out:</p></label>
+                <input type="date" id="DataSaida" name="checkOut" class="conferir"> <br>
+                <label for="hospedes"><p>Hóspedes: </p></label> 
+                <select name="numPessoas" class="conferir">
+                    <option value="valor1">1</option>
+                    <option value="valor2">2</option>
+                    <option value="valor3">3</option>
+                    <option value="valor4">4</option>
+                    <option value="valor5">5</option>
+                </select> <br>
+                <label for="cafeDaManha"><p>Você deseja café da manhã?</p></label>
+                <input type="radio" name="cafe_Manha" id="cafeDaManhaSim">Sim
+                <input type="radio" name="cafe_Manha" id="cafeDaManhaNao">Não
+                <label for="vagaDeGaragem"><p>Você vai precisar utilizar a garagem?</p></label>
+                <input type="radio" name="vaga_garagem" id="vagaDeGaragemSim">Sim
+                <input type="radio" name="vaga_garagem" id="vagaDeGaragemNao">Não <br>
+                <p>Alguma Observação?</p>
+                <textarea name="obs" id="observacao" cols="30" rows="10" minlength="10" maxlength="200"></textarea> <br>
+                <button type="submit" onclick="reservar()" id="reservar" class="reservarHotel">
+                    Reservar Agora
+                </button>
+                
+            </form>
+            
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Controle Interno</title>
+    <link rel="stylesheet" href="página-interno.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="página-login.html">Login</a>
+        <a href="página-cadastro.html">Cadastrar</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <div class="container-interno" name="cadastroHospedes">
+        <h2>Cadastro Interno:</h2>
+        <form id="cadastroInterno">
+            <label for= "numeroQuarto"><p>Número do Quarto: </p></label>
+            <input type="number" id="numeroQuarto" class="numQuarto"> <br>
+            <label for= "nomesHospedes"><p> Nome: </p></label> 
+            <input type="text" id="nomesHospedes" class="nomes"> <br> 
+            <label for="RG"><p>RG:</p></label>
+            <input type="number" id="RG" class="identidade"> <br>
+            <button type="submit" onclick="cadastrar_hospede()" id="cadastrarHospede">Cadastrar</button>
+            <button type="reset" onclick="limpar_campos()" id="limparCampos">Limpar</button> 
+        </form>
+    </div>
+</body>
+</html>

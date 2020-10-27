@@ -1,0 +1,87 @@
+body {
+    background: url(imgs/back-loginCadastro.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: wheat;
+    font-weight: bold;
+}
+.menu {
+    font-size: 18px;
+    line-height: 70px;
+    text-align: right;
+}
+.menu a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+.menu a:hover {
+    padding-right: 30px;
+    transition: 2s;
+    text-decoration: underline solid black;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+h1 {
+    margin-top: 20px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-interno {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    height: 360px;
+    border-radius: 20px;
+    background: rgba(22, 22, 22, 0.719);
+    color: #fff;
+    margin: 70px auto; /*deixa no centro*/
+    padding: 40px 30px; /*dentro da div ou box */
+}
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.container-interno input[type="text"], input[type="number"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 25px;
+    color: #fff;
+    font-size: 16px;
+            
+}       
+
+.container-interno button[type='submit'], button[type="reset"] {
+    border: none;
+    outline: none; /*contorno */
+    height: 30px; 
+    width: 80%;
+    background: rgba(50, 172, 253, 0.7);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 15px;
+    text-align: center; 
+    margin-top: 15px; /*margin é entre um elemento e outro */
+    margin-left: 14%;
+    
+}
+.container-interno button[type="submit"]:hover, button[type="reset"]:hover {
+    cursor: pointer;
+    background: #ffc1079c;
+    color:#000;
+}

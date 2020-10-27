@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="página-cadastro.css">
+    
+</head>
+<body>
+    <div class="menu">
+        <a href="página-login.html">Login</a>
+        <a href="página-cadastro.html">Cadastrar</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <div class="container-cadastro">
+        <h2>Preencha os Dados</h2>
+    <form>
+        <label for="nomeCompleto"><p>Nome Completo: *</p> </label> 
+            <input type="text" id="nome_cadastro" class="name" name="name" placeholder="Digite seu nome"> <br>
+        <label for="endereco"><p>Endereço: </p> </label> 
+            <input type="text" id="endereco_cadastro" class="adress" name="adress" placeholder="Digite seu telefone"> <br>
+        <label for="email">E-mail: *</label>
+            <input type="email" id="endereco_email" class="email" name="email" placeholder="Digite seu e-mail">
+        <label for="senha"><p>Insira uma senha: *</p></label> 
+            <input type="password" id="senha_cadastro" class="name" name="password" placeholder="Digite sua senha"> <br> 
+        <label for="confirmarSenha"><p>Confirme sua senha: *</p></label> 
+            <input type="password" id="confirma_senha" class="name" name="password2" placeholder="Repita sua senha"> <br>
+        <button type="submit" onclick="enviarDados()" id="enviar">Enviar</button> 
+        <button type="reset" onclick="limparDados()" id="limpar">Limpar</button>
+        <p class="campo_obrigatorio">* Campos obrigatórios</p>
+    </form>
+    </div> 
+    
+</body>
+</html>

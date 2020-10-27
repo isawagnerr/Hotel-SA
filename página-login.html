@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>    
+    <link rel="stylesheet" type="text/css" href="página-login.css"> 
+</head>
+<body>
+    <div class="menu">
+        <a href="página-login.html">Login</a>
+        <a href="página-cadastro.html">Cadastrar</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <div class="container-login">
+        <img src="imgs/avatar-login.png" alt="ícones-de-login png from pngtree.com" class="avatar">
+            <h1 class="facaSeuLogin">Faça seu login:</h1>
+            <form>
+                <label for="usuario"><p>Usuário:</p></label> 
+                <input type="email" id="email_login" class="login" placeholder="Digite seu E-mail"> <br>
+                <label for="senha"><p>Senha:</p></label> 
+                <input type="password" id="senha_login" class="password" placeholder="Digite sua Senha"> <br>
+                <button type="submit" onclick="entrar()" id="entrar" class="in">Entrar</button> <br>
+                <a href="página-cadastro.html">Não tenho cadastro</a><br>
+                <a href="#">Esqueci minha senha</a>
+            </form>
+    
+</body>
+</html>

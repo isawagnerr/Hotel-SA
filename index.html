@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel SA</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <a href="página-login.html">
+        <b>Login</b>
+    </a>       
+   </header>
+   <h1 id="titulo1">Reserve seu Hotel</h1>
+   <div id="indexBox"> <!--inicio principal-->              
+            <form>
+            <label for= "check_in">Check In:</label> <!--rótulo ou etiqueta, serve para acessibilidade também-->
+            <input type="date" id="DataEntrada" name="checkIn" class="conferir">
+            <label for= "check_out">Check Out:</label>
+            <input type="date" id="DataSaida" name="checkOut" class="conferir">
+            <label for="hospedes"> Hóspedes: </label> 
+            <select name="numPessoas" class="conferir">
+                <option value="valor1">1</option>
+                <option value="valor2">2</option>
+                <option value="valor3">3</option>
+                <option value="valor4">4</option>
+                <option value="valor5">5</option>
+            </select> <br>
+            <button type="submit" onclick="reservar()" id="reservar" class="reservarHotel">
+                Reservar Agora
+            </button>
+    </form>
+    </div>   
+    <footer>
+        
+        <p>Florianópolis- Santa Catarina, Brasil</p>
+        <p>isabelawr@gmail.com</p>
+        <p>Endereço: Beco dos Coroas, 370</p>
+    </footer>
+</body>
+</html>
